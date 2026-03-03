@@ -369,24 +369,23 @@ body {
     overflow: hidden;
 }
 
-.portfolio-overlay {
+.overlay-text {
     position: absolute;
     top: 0;
-    left: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    color: #ffffff;
     width: 100%;
     height: 100%;
-    background-color: var(--primary-brand);
-    transform: translateY(100%);
+    transform:translateY(100%);
     transition: transform var(--transition);
-    padding: 40px 32px;
 }
 
-.portfolio-item:hover .portfolio-overlay {
-    transform: translateY(0);
-}
-
-.overlay-text {
-    color: var(--light);
+.portfolio-item:hover .overlay-text {
+    transform: translateY(0%);
 }
 
 .portfolio-info {
@@ -460,7 +459,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background-color: var(--primary-brand);
+    background-color: #4d5ae5;
     transition: background-color var(--transition);
 }
 
