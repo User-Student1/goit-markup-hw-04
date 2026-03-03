@@ -76,10 +76,6 @@ body {
 }
 
 /* Header */
-.page-header {
-    border-bottom: 1px solid var(--accent);
-}
-
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -89,6 +85,13 @@ body {
 .navigation {
     display: flex;
     align-items: center;
+}
+.page-header {
+    border-bottom: 1px solid var(--accent);
+    box-shadow: 
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 /* Logo */
@@ -232,6 +235,7 @@ body {
     background-color: var(--light);
     border-radius: 4px;
     margin-bottom: 8px;
+    border: 1px solid #8e8f99;
 }
 
 .benefits-icon {
@@ -412,11 +416,11 @@ body {
 .footer-wrapper {
     display: flex;
     align-items: baseline;
-    gap: 120px;
 }
 
 .footer-info {
     max-width: 264px;
+    margin-right: 120px;
 }
 
 .footer .logo {
@@ -432,8 +436,11 @@ body {
 /* Footer Social */
 .footer-social-title {
     font-weight: 500;
+    font-size: 16px;
     color: var(--white);
     margin-bottom: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .footer-social-list {
@@ -463,5 +470,5 @@ body {
 }
 
 .footer-social-icon {
-    fill: var(--light);
+    fill: var(--light); 
 }
