@@ -239,6 +239,7 @@ button {
     background-color: var(--light);
     border-radius: 4px;
     margin-bottom: 8px;
+    border: 1px solid var(--subtle-text);
 }
 
 .benefits-icon {
@@ -432,6 +433,9 @@ button {
     display: flex;
     align-items: baseline;
     gap: 120px;
+}
+.footer-info {
+    margin-right: 120px;
 }
 
 .footer .logo {
