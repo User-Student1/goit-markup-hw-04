@@ -78,10 +78,10 @@ button {
 /* Header */
 .page-header {
     border-bottom: 1px solid var(--accent);
-    /*box-shadow: 
+    box-shadow: 
     0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 6px rgba(46, 47, 66, 0.08);*/
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
     display: flex;
@@ -427,19 +427,11 @@ button {
     background-color: var(--dark);
     padding: 100px 0;
 }
-.footer .container {
-    max-width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
 
 .footer-wrapper {
     display: flex;
     align-items: baseline;
-}
-
-.footer-info {
-    margin-right: 120px;
+    gap: 120px;
 }
 
 .footer .logo {
@@ -480,9 +472,6 @@ button {
 .footer-social-list {
     display: flex;
     gap: 16px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 .footer-social-item {
@@ -498,7 +487,7 @@ button {
     height: 100%;
     border-radius: 50%;
     background-color: var(--primary-brand);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition);
 }
 
 .footer-social-link:hover,
@@ -507,10 +496,8 @@ button {
 }
 
 .footer-social-icon {
+    width: 24px;
+    height: 24px;
     fill: var(--light);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer-social-link:hover .footer-social-icon,
-.footer-social-link:focus .footer-social-icon {
-    fill: var(--white);
+    transition: fill var(--transition);
 }
